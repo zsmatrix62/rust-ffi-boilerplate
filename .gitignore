@@ -1,0 +1,5 @@
+./src/VocabAPI*
+*.a
+*.swiftmodule
+generated*
+generated/
