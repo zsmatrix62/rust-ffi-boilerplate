@@ -6,7 +6,7 @@ Boilerplate project to make:
 
   `xcframework`/`Swift Package` of Rust crate for apple platform
 
-- Android: # TODO
+- Android: ( Not yet implemented - **PR is welcomed** )
 
 ## Prerequisites
 
@@ -42,15 +42,22 @@ bash build.sh debug
 bash build.sh
 ```
 
+## Integrations
+
+### Use in Xcode
+
+1. Package Dependencies -> Add -> Add Local -> ( Select package folder under generated `iOS` directory )
+2. Targets -> General -> Frameworks, Libraries, and Embeded Content -> ( Select your framework )
+3. ( Import in your Swift code )
+
 ## Repository Tree Memo
 
 ```
 .
 ├── Cargo.toml
 ├── generate (generated target folder)
-│         └── iOS
+│         └── iOS/Mac
 │               └── MyPkg (generated Swift package)
-├── Package.swift  (swift package manifest file)
 ├── build.rs
 ├── build.sh (build script)
 ├── misc (required files to create xcframework)

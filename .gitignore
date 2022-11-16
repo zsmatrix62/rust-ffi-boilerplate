@@ -3,3 +3,5 @@
 *.swiftmodule
 generated*
 generated/
+target/
+cargo.lock
